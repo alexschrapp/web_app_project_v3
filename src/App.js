@@ -1,5 +1,11 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './components/Nav';
+import About from './components/About';
+import LoggedIn from './components/LoggedIn';
+import UserSignUp from './components/UserSignUp'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 import { Container, Row, Col,  Button, Alert, Breadcrumb, Card, Form} from 'react-bootstrap'
 
@@ -7,13 +13,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+
         <Container>
 
         <div className="panel header"variant= "primary" style= {{color: "#ffffff" }}>
           MAGMA
           <div className="panel-body" variant= "primary" style= {{color: "#574d57" }}>The Ultimative Website for Gaming Enthusiasts</div>
         </div>
-
+        <Nav/>
+        <About/>
+        <LoggedIn/>
+        <UserSignUp/>
         <Form>
           <Row>
             <Col md>
