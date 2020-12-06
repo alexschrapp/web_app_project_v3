@@ -15,6 +15,7 @@ function Nav() {
         </h4>
         <ul className="nav-links"/>
        
+
         <Link style ={navStyle} to='/Home'>
             <li> Home </li>
         </Link>
